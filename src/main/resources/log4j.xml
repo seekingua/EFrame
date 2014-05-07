@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE log4j:configuration>
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- to file -->
+	<appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="/home/logs/eframe.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="utf-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p %l - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- to console -->
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="encoding" value="" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p %l - %m%n" />
+		</layout>
+	</appender>
+
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="console" />
+	</root>
+</log4j:configuration>

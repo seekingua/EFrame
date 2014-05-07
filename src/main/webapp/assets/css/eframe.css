@@ -1,0 +1,219 @@
+body {
+	font-family: '微软雅黑';
+}
+
+.ul-li {
+	padding: 3px 0px 0px 0px;
+}
+
+.ul-li-span {
+	padding-left: 10px;
+	color: green;
+	font-weight: 800
+}
+
+.e-action-buttons a {
+	margin: 0 10px;
+	display: inline-block;
+	opacity: .85;
+	-webkit-transition: all .1s;
+	transition: all .1s
+}
+
+.e-action-buttons a:hover {
+	margin-right: 10px;
+	text-decoration: none;
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	opacity: 1;
+	text-decoration: none;
+}
+
+.font-color-red {
+	color: red;
+	font-weight: 800
+}
+
+.font-color-blue {
+	color: blue;
+	font-weight: 800
+}
+
+.font-color-green {
+	color: green;
+	font-weight: 800
+}
+
+.form-p {
+	padding-top: 10px;
+}
+
+.e-inner-div {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.e-dropdown {
+	border-top-width: 4px;
+	border-bottom-width: 4px;
+}
+
+.div-checkbox {
+	padding-right: 8px
+}
+
+.div-table {
+	display: table;
+	width: 45%;
+	margin: 10px 0px 20px 0px;
+	border: 1px solid #ddd;
+	border-collapse: separate;
+	*border-collapse: collapse;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-left: 0;
+	margin-left: 15%;
+	max-width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #ddd;
+	max-width: 100%;
+}
+
+.div-head-tr {
+	display: table-row;
+	font-weight: normal;
+	background-color: #CCCCCC;
+}
+
+.div-head-td {
+	display: table-cell;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-left: 1px solid #ddd;
+	padding: 8px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+	font-weight: bold
+}
+
+.div-tr {
+	display: table-row;
+	border-bottom: 1px solid #ddd;
+}
+
+.div-td {
+	display: table-cell;
+	padding: 8px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+}
+
+#ecdata {
+	border-collapse: collapse;
+}
+
+#ecdata div.arrow {
+	width: 16px;
+	height: 16px;
+	display: block;
+}
+
+#ecdata div.up {
+	background-position: 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+
+	.reveal-modal {
+		visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 520px;
+		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+
+	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+	.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+	.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+
+	.reveal-modal .close-reveal-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 
+	/*
+		
+	NOTES
+	
+	Close button entity is &#215;
+	
+	Example markup
+	
+	<div id="myModal" class="reveal-modal">
+		<h2>Awesome. I have it.</h2>
+		<p class="lead">Your couch.  I it's mine.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	*/
